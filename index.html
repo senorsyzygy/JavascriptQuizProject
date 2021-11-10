@@ -30,7 +30,7 @@
                     <br>
                     <br>
                     <p class="lead">Click below to begin</p>
-                    <input type="button" value="Start quiz" class="btn btn-primary btn-lg text-center" onclick="question1()"/>
+                    <input type="button" value="Start quiz" class="btn btn-primary btn-lg text-center" onclick="nextQuestion('intro','question1')"/>
                 </div>
                 <!--Question 1-->
                 <div id="question1" class="mx-auto">
@@ -53,8 +53,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question2()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="quizIntro()"/>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="nextQuestion('question1','question2')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question1','intro')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -82,8 +82,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question3()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question1()"/>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="nextQuestion('question2','question3')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question2','question1')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -111,8 +111,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question4()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question2()"/>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="nextQuestion('question3','question4')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question3','question2')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -140,8 +140,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question5()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question3()"/>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="nextQuestion('question4','question5')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question4','question3')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -169,8 +169,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question6()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question4()"/>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="nextQuestion('question5','question6')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question5','question4')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -198,8 +198,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question7()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question5()"/>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="nextQuestion('question6','question7')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question6','question5')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -227,8 +227,8 @@
                                 </label>
                             </div>
                             <br>
-                            <input type="button" value="Results" class="btn btn-success mx-auto" onclick="results()"/>
-                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question6()"/>
+                            <input type="button" value="Results" class="btn btn-success mx-auto" onclick="nextQuestion('question7','quizResults')"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="prevQuestion('question7','question6')"/>
                         </div>
                     </div>
                     <div class="progress">
@@ -236,7 +236,7 @@
                       </div>
                 </div>
                 <!--Results-->
-                <div id="results" class="justify-content-center mx-auto">
+                <div id="quizResults" class="justify-content-center mx-auto">
                     <br><br>
                     <h4>Results:</h4>
                     <br>
@@ -244,7 +244,6 @@
                     <br>
                     <p class="lead">Well done to making it to the end</p>
                     <br>
-                    <input type="button" value="Start quiz again" class="btn btn-secondary mx-auto" onclick="quizIntro()"/>
                 </div>
             </div>
         </div>
