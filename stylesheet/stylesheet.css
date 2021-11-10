@@ -20,20 +20,8 @@ body{
     margin:auto;
 }
 #quiz{
-    background-color: darkgrey;
-    height: 800px;
+    background-color: white;
+    height: 900px;
     width:900px;
     margin:auto;
-}
-#question1{
-    background-image:url("../images/question1.jpg");
-    display:none;
-    width:700px;
-    height:700px;
-}
-#question2{
-    background-image:url("../images/question2.jpg");
-    display:none;
-    width:700px;
-    height:700px;
 }

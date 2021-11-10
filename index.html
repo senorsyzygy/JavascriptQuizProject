@@ -21,9 +21,15 @@
                 <div id="intro" class="justify-content-center mx-auto">
                     <br><br>
                     <h4>How well do you really know the titles of some famous Clint Eastwood films?</h4>
-                    <br><br>
-                    <p class="lead">Click below to begin</p>
                     <br>
+                    <img src="images/intro.jpg" alt="intro image">
+                    <br><br>
+                    <p>There will be a series of 7 questions, each with an image featuring a screenshot of the movie in question.</p>
+                    <p>Your task will be to correctly guess the right title of the film and at the end there will be a results screen calculating how well you have performed.</p>
+                    <p>If you suddenly feel the need to change a past answer then you have no need to worry! You can always click the back button at any point and change your answer</p>
+                    <br>
+                    <br>
+                    <p class="lead">Click below to begin</p>
                     <input type="button" value="Start quiz" class="btn btn-primary btn-lg text-center" onclick="question1()"/>
                 </div>
                 <!--Question 1-->
@@ -87,7 +93,7 @@
                 <!--Question 3-->
                 <div id="question3" class="mx-auto">
                     <div class="card" style="width: 700px;">
-                        <img src="images/question3.jpg" class="card-img-top" alt="question2">
+                        <img src="images/question3.jpg" class="card-img-top" alt="question3">
                         <div class="card-body">
                             <h5 class="card-title">Which of the following is correct?</h5>
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -116,7 +122,7 @@
                 <!--Question 4-->
                 <div id="question4" class="mx-auto">
                     <div class="card" style="width: 700px;">
-                        <img src="images/question4.jpg" class="card-img-top" alt="question2">
+                        <img src="images/question4.jpg" class="card-img-top" alt="question4">
                         <div class="card-body">
                             <h5 class="card-title">Which of the following is correct?</h5>
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -145,7 +151,7 @@
                 <!--Question 5-->
                 <div id="question5" class="mx-auto">
                     <div class="card" style="width: 700px;">
-                        <img src="images/question5.jpg" class="card-img-top" alt="question2">
+                        <img src="images/question5.jpg" class="card-img-top" alt="question5">
                         <div class="card-body">
                             <h5 class="card-title">Which of the following is correct?</h5>
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -174,7 +180,7 @@
                 <!--Question 6-->
                 <div id="question6" class="mx-auto">
                     <div class="card" style="width: 700px;">
-                        <img src="images/question6.jpg" class="card-img-top" alt="question2">
+                        <img src="images/question6.jpg" class="card-img-top" alt="question6">
                         <div class="card-body">
                             <h5 class="card-title">Which of the following is correct?</h5>
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -203,7 +209,7 @@
                 <!--Question 7-->
                 <div id="question7" class="mx-auto">
                     <div class="card" style="width: 700px;">
-                        <img src="images/question7.jpg" class="card-img-top" alt="question2">
+                        <img src="images/question7.jpg" class="card-img-top" alt="question7">
                         <div class="card-body">
                             <h5 class="card-title">Which of the following is correct?</h5>
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -233,7 +239,9 @@
                 <div id="results" class="justify-content-center mx-auto">
                     <br><br>
                     <h4>Results:</h4>
-                    <br><br>
+                    <br>
+                    <p class="lead" id="result"></p>
+                    <br>
                     <p class="lead">Well done to making it to the end</p>
                     <br>
                     <input type="button" value="Start quiz again" class="btn btn-secondary mx-auto" onclick="quizIntro()"/>

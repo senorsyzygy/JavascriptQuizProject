@@ -49,6 +49,7 @@ function question1() {
     document.getElementById("results").style.display = "none";
   }
   function results()  {
+    // calculateResults()
     document.getElementById("question7").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
   }
