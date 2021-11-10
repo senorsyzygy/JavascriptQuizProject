@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../JavaScriptQuiz/stylesheet/stylesheet.css">
+</head>
+<body>
+    <div class="container" id="container">
+            <div class="col-12 header">
+                    <div class="d-flex justify-content-center align-items center h-100">
+                        <div class="text-white">
+                            <h1 class="display-1">Movie Title Quiz</h1>
+                            <h2 class="mb-3">A test to really see if you know Clint Eastwood films</h2>
+                        </div>
+                    </div>
+                </div>
+            <div class="container" id="quiz">
+                <!--Intro-->
+                <div id="intro" class="justify-content-center mx-auto">
+                    <br><br>
+                    <h4>How well do you really know the titles of some famous Clint Eastwood films?</h4>
+                    <br><br>
+                    <p class="lead">Click below to begin</p>
+                    <br>
+                    <input type="button" value="Start quiz" class="btn btn-primary btn-lg text-center" onclick="question1()"/>
+                </div>
+                <!--Question 1-->
+                <div id="question1" class="mx-auto">
+                    <div class="card" style="justify-content: center; align-items: center;">
+                        <img src="images/question1.jpg" class="card-img-top" alt="question1">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="a1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest1" id="a1" autocomplete="off" required>
+                                    For a Few Dollars More
+                                </label>
+                                <label class="btn btn-dark" for="a2" value=1>
+                                    <input type="radio" class="btn-check" name="quest1" id="a2" autocomplete="off" required>
+                                    For a Few Pounds More
+                                </label>
+                                <label class="btn btn-dark" for="a3" value=0>
+                                    <input type="radio" class="btn-check" name="quest1" id="a3" autocomplete="off" required>
+                                    For a Few Euros Less
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question2()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="quizIntro()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">1/7</div>
+                      </div>
+                </div>
+                <!--Question 2-->
+                <div id="question2" class="mx-auto">
+                    <div class="card" style="width: 700px;">
+                        <img src="images/question2.jpg" class="card-img-top" alt="question2">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="b1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest2" id="b1" autocomplete="off">
+                                    Dirty Harry
+                                </label>
+                                <label class="btn btn-dark" for="b2" value=1>
+                                    <input type="radio" class="btn-check" name="quest2" id="b2" autocomplete="off">
+                                    Scruffy Harry
+                                </label>
+                                <label class="btn btn-dark" for="b3" value=0>
+                                    <input type="radio" class="btn-check" name="quest2" id="b3" autocomplete="off">
+                                    Mucky Larry
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question3()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question1()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">2/7</div>
+                      </div>
+                </div>
+                <!--Question 3-->
+                <div id="question3" class="mx-auto">
+                    <div class="card" style="width: 700px;">
+                        <img src="images/question3.jpg" class="card-img-top" alt="question2">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="c1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest3" id="c1" autocomplete="off">
+                                    High Plains Drifter
+                                </label>
+                                <label class="btn btn-dark" for="c2" value=1>
+                                    <input type="radio" class="btn-check" name="quest3" id="c2" autocomplete="off">
+                                    Low Plains Drifter
+                                </label>
+                                <label class="btn btn-dark" for="c3" value=0>
+                                    <input type="radio" class="btn-check" name="quest3" id="c3" autocomplete="off">
+                                    Middle Plains Grifter
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question4()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question2()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">3/7</div>
+                      </div>
+                </div>
+                <!--Question 4-->
+                <div id="question4" class="mx-auto">
+                    <div class="card" style="width: 700px;">
+                        <img src="images/question4.jpg" class="card-img-top" alt="question2">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="d1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest4" id="d1" autocomplete="off">
+                                    Million Dollar Baby
+                                </label>
+                                <label class="btn btn-dark" for="d2" value=1>
+                                    <input type="radio" class="btn-check" name="quest4" id="d2" autocomplete="off">
+                                    Billion Pound Baby
+                                </label>
+                                <label class="btn btn-dark" for="d3" value=0>
+                                    <input type="radio" class="btn-check" name="quest4" id="d3" autocomplete="off">
+                                    Trillion Yen Adult
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question5()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question3()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100">4/7</div>
+                      </div>
+                </div>
+                <!--Question 5-->
+                <div id="question5" class="mx-auto">
+                    <div class="card" style="width: 700px;">
+                        <img src="images/question5.jpg" class="card-img-top" alt="question2">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="e1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest5" id="e1" autocomplete="off">
+                                    The Mule
+                                </label>
+                                <label class="btn btn-dark" for="e2" value=1>
+                                    <input type="radio" class="btn-check" name="quest5" id="e2" autocomplete="off">
+                                    The Donkey
+                                </label>
+                                <label class="btn btn-dark" for="e3" value=0>
+                                    <input type="radio" class="btn-check" name="quest5" id="e3" autocomplete="off">
+                                    The Horse
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question6()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question4()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">5/7</div>
+                      </div>
+                </div>
+                <!--Question 6-->
+                <div id="question6" class="mx-auto">
+                    <div class="card" style="width: 700px;">
+                        <img src="images/question6.jpg" class="card-img-top" alt="question2">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="f1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest6" id="f1" autocomplete="off">
+                                    Escape from Alcatraz
+                                </label>
+                                <label class="btn btn-dark" for="f2" value=1>
+                                    <input type="radio" class="btn-check" name="quest6" id="f2" autocomplete="off">
+                                    Escape from LA
+                                </label>
+                                <label class="btn btn-dark" for="f3" value=0>
+                                    <input type="radio" class="btn-check" name="quest6" id="f3" autocomplete="off">
+                                    Escape from HMP Wakefield
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Next question" class="btn btn-primary mx-auto" onclick="question7()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question5()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">6/7</div>
+                      </div>
+                </div>
+                <!--Question 7-->
+                <div id="question7" class="mx-auto">
+                    <div class="card" style="width: 700px;">
+                        <img src="images/question7.jpg" class="card-img-top" alt="question2">
+                        <div class="card-body">
+                            <h5 class="card-title">Which of the following is correct?</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <label class="btn btn-dark" for="g1" value=3>  
+                                    <input type="radio" class="btn-check" name="quest7" id="g1" autocomplete="off">
+                                    The Good, the Bad, and the Ugly
+                                </label>
+                                <label class="btn btn-dark" for="g2" value=1>
+                                    <input type="radio" class="btn-check" name="quest7" id="g2" autocomplete="off">
+                                    The Good, the Bad, and the Weird
+                                </label>
+                                <label class="btn btn-dark" for="g3" value=0>
+                                    <input type="radio" class="btn-check" name="quest7" id="g3" autocomplete="off">
+                                    The Nice, the Naughty, and the Mediocre
+                                </label>
+                            </div>
+                            <br>
+                            <input type="button" value="Results" class="btn btn-success mx-auto" onclick="results()"/>
+                            <input type="button" value="Go back" class="btn btn-secondary mx-auto" onclick="question6()"/>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">7/7</div>
+                      </div>
+                </div>
+                <!--Results-->
+                <div id="results" class="justify-content-center mx-auto">
+                    <br><br>
+                    <h4>Results:</h4>
+                    <br><br>
+                    <p class="lead">Well done to making it to the end</p>
+                    <br>
+                    <input type="button" value="Start quiz again" class="btn btn-secondary mx-auto" onclick="quizIntro()"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quizCode.js" type="text/javascript"></script>
+</body>
