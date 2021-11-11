@@ -87,9 +87,7 @@ function calculatingResults(){
       }
   }
   let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value) + Number(q6Value) + Number(q7Value)
-  console.log(total)
   result = total
-  console.log(result)
   if (result == 21){
     msg = "You have gotten everything correct, well done!";
   } else if (result == 0){
