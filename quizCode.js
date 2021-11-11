@@ -19,6 +19,12 @@ function prevQuestion(current, prev){
   document.getElementById(current).style.display = "none"
   document.getElementById(prev).style.display = "inline-block"
 }
+//Goes to the Results screen
+function resultsScreen(){
+  calculatingResults()
+  document.getElementById('question7').style.display = "none"
+  document.getElementById('quizResults').style.display = "inline-block"
+}
 //calculates results and displays message based on differing score
 function calculatingResults(){
   const radios1 = document.querySelectorAll('input[name="quest1"]');
@@ -82,17 +88,15 @@ function calculatingResults(){
   }
   let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value) + Number(q6Value) + Number(q7Value)
   console.log(total)
-  result = total 
-  if (result = 21){
-    msg = "You have gotten everything correct, well done!"
-  } else if (result = 0){
-    msg = "Somehow you managed to get everything wrong, well done!"
-  } else if (7 > result > 0) {
-    msg = "You got some close, try again and hope for a better score!"
-  } else if (21 > result >= 7) {
-    msg = "You're very close to getting them all correct, try again and see if you can get them all correct!"
+  result = total
+  console.log(result)
+  if (result == 21){
+    msg = "You have gotten everything correct, well done!";
+  } else if (result == 0){
+    msg = "You have managed to get everything incorrect, well done!";
+  } else {
+    msg = "You're almost there, try again and get everything correct!";
   }
 
   document.getElementById("result").innerHTML = msg
-  console.log(msg)
 }
