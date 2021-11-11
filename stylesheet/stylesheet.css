@@ -1,10 +1,9 @@
 body{
     text-align: center;
-    background-color: black;
+    background-color: slategrey;
 }
 #container{
     width:80vw;
-    background-color: cadetblue;
     margin:auto;
     top: 0;
     right: 0;
